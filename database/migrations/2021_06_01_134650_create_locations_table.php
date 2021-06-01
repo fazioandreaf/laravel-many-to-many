@@ -15,6 +15,10 @@ class CreateLocationsTable extends Migration
     {
         Schema::create('locations', function (Blueprint $table) {
             $table->id();
+
+            $table->string('address',128);
+            $table->string('state',128);
+
             $table->timestamps();
         });
     }

@@ -15,6 +15,12 @@ class CreateContractsTable extends Migration
     {
         Schema::create('contracts', function (Blueprint $table) {
             $table->id();
+
+            $table->string('todoo',128);
+            $table->string('do',128);
+            $table->string('done',128);
+
+
             $table->timestamps();
         });
     }

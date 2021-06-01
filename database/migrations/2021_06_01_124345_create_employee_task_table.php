@@ -16,10 +16,9 @@ class CreateEmployeeTaskTable extends Migration
         Schema::create('employee_task', function (Blueprint $table) {
             $table->id();
 
-            $table->string('name',128);
-            $table->string('lastname',128);
-            $table->string('role',128);
-            $table->bigInteger('location_id')->unsigned()->index();
+            $table->bigInteger('employee_id')->unsigned()->index();
+            $table->bigInteger('task_id')->unsigned()->index();
+
 
 
             $table->timestamps();
