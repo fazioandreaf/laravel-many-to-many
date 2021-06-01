@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Contract;
 
 class ContractSeeder extends Seeder
 {
@@ -11,6 +12,6 @@ class ContractSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(Contract::class,50)->create();
     }
 }

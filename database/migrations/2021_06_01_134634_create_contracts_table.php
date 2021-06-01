@@ -16,9 +16,11 @@ class CreateContractsTable extends Migration
         Schema::create('contracts', function (Blueprint $table) {
             $table->id();
 
-            $table->string('todoo',128);
-            $table->string('do',128);
-            $table->string('done',128);
+
+            $table->string('type',128);
+            $table->string('expiration_date',128);
+            $table->integer('ral');
+            $table->string('seniority',128);
 
 
             $table->timestamps();

@@ -15,8 +15,10 @@ class EmployeeSeeder extends Seeder
      */
     public function run()
     {
-        factory(location::class,500)->make()->each(fuction($employee){
+        factory(Employee::class,500)->make()->each(function($employee){
             $location=Location::inRandomOrder()->first();
+            $contract=Contract::inRandomOrder()->first();
+            $employee->contract_id=$contract->id;
             $employee->location_id=$location->id;
             $employee->save();
         });

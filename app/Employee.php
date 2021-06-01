@@ -11,5 +11,17 @@ class Employee extends Model
         'lastname',
         'role',
 
-    ]
+    ];
+    public function location()
+    {
+        return $this->belongsTo('App\Location');
+    }
+    public function contract()
+    {
+        return $this->belongsTo('App\Contract');
+    }
+    public function tasks()
+    {
+        return $this->belongsToMany('App\Task');
+    }
 }

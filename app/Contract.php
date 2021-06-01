@@ -11,5 +11,9 @@ class Contract extends Model
         'expiration_date',
         'ral',
         'seniority',
-    ]
+    ];
+    public function employees()
+    {
+        return $this->hasMany(Employee::class);
+    }
 }

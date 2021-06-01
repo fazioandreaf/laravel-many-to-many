@@ -10,5 +10,9 @@ class Task extends Model
         'todoo',
         'do',
         'done'
-    ]
+    ];
+    public function employees()
+    {
+        return $this->belongsToMany(Employee::class);
+    }
 }

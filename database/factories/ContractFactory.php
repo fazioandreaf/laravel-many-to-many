@@ -9,7 +9,7 @@ $factory->define(Contract::class, function (Faker $faker) {
     return [
         'type'=>$faker->word,
         'expiration_date'=>$faker->word,
-        'ral'=>$faker->number,
+        'ral'=>$faker->numberBetween(1000,9000000),
         'seniority'=>$faker->word,
 
     ];
