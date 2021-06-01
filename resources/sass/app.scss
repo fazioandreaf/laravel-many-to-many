@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    body {
+        a {
+            color: white;
+            &:hover {
+                color: green;
+            }
+        }
+        text-align: center;
+        * {
+            padding: 5px;
+        }
+        ul {
+            list-style-type: none;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        background-color: lightgrey;
+        color: white;
+        .add {
+            position: fixed;
+            a {
+                text-decoration: none;
+                color: purple;
+            }
+        }
+        header {
+            margin-bottom: 50px;
+            color: grey;
+        }
+        footer {
+            margin-top: 50px;
+            color: grey;
+        }
+    }
+}

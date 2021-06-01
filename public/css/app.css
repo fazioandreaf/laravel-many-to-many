@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* body {
+  text-align: center;
+  background-color: lightgrey;
+  color: white;
+}
+
+* body a {
+  color: white;
+}
+
+* body a:hover {
+  color: green;
+}
+
+* body * {
+  padding: 5px;
+}
+
+* body ul {
+  list-style-type: none;
+}
+
+* body form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+* body .add {
+  position: fixed;
+}
+
+* body .add a {
+  text-decoration: none;
+  color: purple;
+}
+
+* body header {
+  margin-bottom: 50px;
+  color: grey;
+}
+
+* body footer {
+  margin-top: 50px;
+  color: grey;
+}
+
