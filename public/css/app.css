@@ -51,3 +51,25 @@
   color: grey;
 }
 
+* body main {
+  display: flex;
+  flex-direction: column;
+}
+
+* body main > div {
+  display: flex;
+  align-items: center;
+}
+
+* body main > div span {
+  color: gray;
+}
+
+* body main > div .todoo {
+  display: flex;
+}
+
+* body main > div > div:last-child {
+  flex-basis: 60%;
+}
+

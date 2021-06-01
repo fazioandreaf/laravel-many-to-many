@@ -7,9 +7,9 @@ use Faker\Generator as Faker;
 
 $factory->define(Task::class, function (Faker $faker) {
     return [
-        'todoo'=>$faker->word,
-        'do'=>$faker->word,
-        'done'=>$faker->word
+        'todoo'=>$faker->sentence(3),
+        'do'=>$faker->sentence(3),
+        'done'=>$faker->sentence(3)
 
     ];
 });
